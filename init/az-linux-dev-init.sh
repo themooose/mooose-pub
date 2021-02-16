@@ -1,10 +1,6 @@
 #!/usr/bin/bash
 exec &> az-linux-dev-init.log
 
-
-
-
-
 # Az-CLI
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
