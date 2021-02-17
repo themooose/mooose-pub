@@ -39,6 +39,29 @@ sudo pip3 install virtualenv
 # Genome Center Stuff
 sudo pip3 install dxpy
 
+git config --global user.name "Mooose"
+git config --global user.email "themooose@gmail.com"
+
+sudo apt install -y zsh
+sudo usermod -s /usr/bin/zsh mooose
+sudo apt install -y powerline fonts-powerline
+
+# OhMyZsh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sudo chmod +x ./install.sh
+./install.sh --unattended
+sudo rm -f ./install.sh
+
+sudo cp .zshrc .zshrc.bak
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/repos/powerlevel10k
+echo 'source ~/repos/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+#Add some aliases
+echo "alias l='ls -lah'" >> ~/.zshrc
+echo "alias ll='ls -l'" >> ~/.zshrc
+echo "alias la='ls -lAh'" >> ~/.zshrc
+
+
 # Update and Upgrade
 sudo apt update && sudo apt upgrade && sudo apt full-upgrade -y
 ### END Provision Init
