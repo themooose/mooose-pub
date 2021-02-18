@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #exec &> az-linux-dev-init.log
 
 # Az-CLI
@@ -65,3 +65,4 @@ echo "alias la='ls -lAh'" >> ~/.zshrc
 # Update and Upgrade
 sudo apt update && sudo apt upgrade && sudo apt full-upgrade -y
 ### END Provision Init
+touch az-linux-dev-init.complete
