@@ -38,6 +38,7 @@ sudo pip3 install virtualenv
 # Genome Center Stuff
 sudo pip3 install dxpy
 
+git config credential.helper store
 git config --global user.name "Mooose"
 git config --global user.email "themooose@gmail.com"
 
