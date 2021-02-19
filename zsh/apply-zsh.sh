@@ -6,6 +6,9 @@
 # Be sure to run this from the mooose-pub/zsh directory!
 [ ! -f apply-zsh.sh ] && { echo "Be sure you are running this from the mooose-pub/zsh directory."; exit; }
 
+# pull the p10k theme into omz
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # update this copy of .zshrc to reference the current user
 sed -i "s/mooose/${USER}/g" .zshrc
 
