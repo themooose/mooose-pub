@@ -17,4 +17,5 @@ cp .zshrc ~/.zshrc
 [ -f ~/.p10k.zsh ] && mv ~/.p10k.zsh ~/.p10k.zsh.bak
 cp .p10k.zsh ~/.p10k.zsh
 
+. ~/.zshrc
 echo "zsh config applied. Happy coding!"
